@@ -10,6 +10,7 @@
       var socket = io.connect('http://localhost');
       socket.on('news', function (data) {
         console.log(data.hello);
+        console.log(data.test);
         socket.emit('my other event', { my: 'data' });
       });
     </script>
