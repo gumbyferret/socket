@@ -25,7 +25,8 @@
       });
       socket.on('add', function (dt){
         $("#load").append($('<li>').text(dt));
-      })
+        console.log(dt);
+      });
     </script>
   </body>
 </html>
