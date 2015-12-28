@@ -16,7 +16,7 @@ function handler(req, res) {
 
 io.on('connection', function(socket) {
   //1.  Calling a function on the client
-  //socket.emit('Ping');
+  socket.emit('Ping');
   //2.  Calling a function on the client with a number parameter
   //socket.emit('Ping', 100);
   //3.  Calling a function on the client with a string parameter
