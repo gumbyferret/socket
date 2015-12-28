@@ -8,6 +8,7 @@
     <form action=" ">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
+    <div id="load"></div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
@@ -22,6 +23,9 @@
         //$('#m').val('');
         //return false;
       });
+      socket.on('data', function (data){
+        ("#load").append(data);
+      })
     </script>
   </body>
 </html>
