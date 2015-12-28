@@ -18,13 +18,13 @@ function handler(req, res) {
 
 io.on('connection', function(socket) {
   //1.  Calling a function on the client
-  socket.emit('Ping');
+  //socket.emit('Ping');
   //2.  Calling a function on the client with a number parameter
   //socket.emit('Ping', 100);
   //3.  Calling a function on the client with a string parameter
   //socket.emit('Ping', 'Here is a string');
   //4.  Calling a function on the client with an object parameter
-  //socket.emit('Ping', {key: 'Object value'});
+  //socket.emit('Ping', {myKey: 'Object value'});
   //5
   //socket.on('Pong', function() {
   //  console.log('Pong');
@@ -40,7 +40,7 @@ io.on('connection', function(socket) {
   //8 Ping Pong
   //socket.emit('Ping', 0);
   //socket.on('Pong', function(data){
-  //  console.log('Pong: "+ data);
+  //  console.log('Pong: '+ data);
   //  data++;
   //  socket.emit('Ping', data);
   //});
@@ -48,6 +48,8 @@ io.on('connection', function(socket) {
   //setTimeout(function() { socket.emit('Ping', 0); }, 5000);
   //socket.on('Pong', function(data) {
   //  console.log('Pong: '+ data);
+  //  data++;
+  //  setTimeout(function() { socket.emit('Ping', data); }, 5000);
   //});
   //10 setInterval
   //setInterval(function() { socket.emit('Ping', 'This is a ping'); }, 2000);
