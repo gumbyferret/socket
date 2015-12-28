@@ -16,6 +16,13 @@ io.on('connection', function (socket) {
   });
 });
 
+io.emit('ping', 0);
+io.on('pong', function(data) {
+  console.log("Pong" + data);
+  data++;
+  io.emit("Ping", data);
+});
+
 server.listen(80, function(){
   console.log('listening on 127.0.0.1');
 });
