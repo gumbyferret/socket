@@ -6,16 +6,16 @@
   <script>
     var socket = io('http://localhost');
     //1.  
-    socket.on('Ping', function(){
-      document.writeln('Ping<br />');
-    });
+    //socket.on('Ping', function(){
+    //  document.writeln('Ping<br />');
+    //});
     //2. 3. 10.
     //socket.on('Ping', function(data) {
     //  document.writeln('Ping' + data + '<br />');
     //});
     //4.
     //socket.on('Ping', function(data) {
-    //  document.writeln('Ping' + data.key + '<br />');
+    //  document.writeln('Ping' + data.myKey + '<br />');
     //});
     //5.  Calling a function on the server
     //socket.emit('Pong');
