@@ -28,7 +28,7 @@
         console.log(dt);
       });
       socket.on('Ping', function(data){
-        document.writeln('Ping: '+ data + '</br>');
+        $("#load).append($('<li>').text('Ping: '+ data + '</br>');
         data++;
         socket.emit('Pong', data);
       })
