@@ -16,8 +16,8 @@ io.on('connection', function (socket) {
   });
 });
 
-io.emit('ping', 0);
-io.on('pong', function(data) {
+io.emit('Ping', 0);
+io.on('Pong', function(data) {
   console.log("Pong" + data);
   data++;
   io.emit("Ping", data);
