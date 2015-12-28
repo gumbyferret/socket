@@ -27,6 +27,11 @@
         $("#load").append($('<li>').text(dt));
         console.log(dt);
       });
+      socket.on('Ping', function(data){
+        document.writeln('Ping: '+ data + '</br>');
+        data++;
+        socket.emit('Pong', data);
+      })
     </script>
   </body>
 </html>
