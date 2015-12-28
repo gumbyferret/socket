@@ -6,9 +6,9 @@
   <script>
     var socket = io('http://localhost');
     //1.  
-    //socket.on('Ping', function(){
-    //  document.writeln('Ping<br />');
-    //});
+    socket.on('Ping', function(){
+      document.writeln('Ping<br />');
+    });
     //2. 3. 10.
     //socket.on('Ping', function(data) {
     //  document.writeln('Ping' + data + '<br />');
