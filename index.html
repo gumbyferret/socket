@@ -23,8 +23,8 @@
         //$('#m').val('');
         //return false;
       });
-      socket.on('data', function (data){
-        ("#load").append(data);
+      socket.on('add', function (dt){
+        ("#load").append(dt);
       })
     </script>
   </body>
