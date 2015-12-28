@@ -15,6 +15,6 @@ io.on('connection', function (socket) {
   });
 });
 
-http.listen(80, function(){
+server.listen(80, function(){
   console.log('listening on 192.168.1.101:3000');
 });
