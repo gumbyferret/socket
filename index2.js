@@ -49,7 +49,4 @@ io.on('connection', function(socket) {
   //});
   //10 setInterval
   //setInterval(function() { socket.emit('Ping', 'This is a ping'); }, 2000);
-  
-  
-  
-}
+});
